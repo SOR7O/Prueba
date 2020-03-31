@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+    /* Tamaño base para la fuente 10px */
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: aqua;
+    font-size: 1em;
+    line-height: 2;
+}
+
+.container {
+    display: block;
+}
+
+@media(min-width:768px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .content {
+        flex: 0 0 calc(25% - 1em);
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    background-image: url(d:/UNICAH/portales-web/Web280–1.png);
+    background-size: cover;
+    background-position: center center;
+    min-height: 40em;
+    display: flex;
+}
+
+.hero-content {
+    display: flex;
+    z-index: 1;
+    align-items: center;
+}
+
+@media {
+    .hero {
+        align-items: center;
+        padding-left: 40em;
+    }
+}
